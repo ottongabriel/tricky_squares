@@ -18,6 +18,7 @@
     or <a href="register.php">register</a> for an account
 </div>
 <div>
-    <!--Welcome video needs to be tested:-->
-    <object data="https://www.youtube.com/embed/M3fGNFJNHQ0" width="560" height="315"></object>
+    <!--Welcome video-->
+    <iframe src="https://www.youtube.com/embed/M3fGNFJNHQ0"
+    width="560" height="315" frameborder="0" allowfullscreen></iframe>
 </div>

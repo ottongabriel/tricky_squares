@@ -1,3 +1,4 @@
+<!-- making information generated in game.php useable -->
 <script>
     var squares = <?php echo json_encode($squares); ?>;
     var level = <?php echo json_encode($level); ?>;

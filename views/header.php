@@ -22,18 +22,21 @@
         <!-- http://greensock.com/timelinelite -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 
+        <!-- if the title is passed in from rendering -->
         <?php if (isset($title)): ?>
             <title>Tricky Squares: <?= htmlspecialchars($title) ?></title>
             
-            <!-- is the page one of the games-->
+            <!-- is it the game page? -->
             <?php if ($title == "Game"): ?>
+                <!-- load the chessboard api and the game scripts -->
                 <!-- chessboardjs.com -->
                 <script src="/js/chessboard-0.3.0.js"></script>
                 
-                <!-- gmae scripts-->
+                <!-- game scripts -->
                 <script src="/js/scripts.js"></script>
             <?php endif?>    
-                
+        
+        <!-- if the title is not passed in -->
         <?php else: ?>
             <title>Tricky Squares</title>
         <?php endif ?>
@@ -48,6 +51,7 @@
                 <div>
                     <a href="/"><img alt="Tricky Chess Exercises" src="/img/logo.png"/></a>
                 </div>
+                <!-- render navigation only if the user is logged in and their level is available -->
                 <?php if (!empty($_SESSION["id"]) && isset($level)): ?>
                     <ul class="nav nav-pills">
                         <li><a href="index.php"><strong>Home</strong></a></li>

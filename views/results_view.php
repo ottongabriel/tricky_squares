@@ -7,8 +7,9 @@
         <?php if($percent_correct < 65): ?>
         <p>You don't seem to quite get it. Don't give up! Try again!</p>
         <p>Here is the explanation for "1 Back" again, in case you need it:</p>
-        <!--One back explanation needs to be tested-->
-        <object data="https://www.youtube.com/embed/PX_u4uCoeHI" width="560" height="315"></object>
+        <!--One back explanation-->
+        <iframe src="https://www.youtube.com/embed/PX_u4uCoeHI"
+        width="560" height="315" frameborder="0" allowfullscreen></iframe>
         <?php else: ?>
         <p>You are almost there! Keep trying!</p>
         <?php endif ?>
@@ -17,13 +18,16 @@
         <p>Congratulations! You go up a level!</p>
         <p>Next time you play you will be doing 2 back exercises.</p>
         <h2>2-BACK</h2>
-        <object data="https://www.youtube.com/embed/8TDwdY3Cy6Q" width="560" height="315"></object>
+        <!--Two back explanation vid-->
+        <iframe src="https://www.youtube.com/embed/8TDwdY3Cy6Q"
+        width="560" height="315" frameborder="0" allowfullscreen></iframe>
         
     <?php elseif($level == 2 && $change_level == "up"): ?>
         <p>Congratulations! You go up a level!</p>
         <p>Now here is an explanation for:</p>
         <h2>LEVELS</h2>
-        <object data="https://www.youtube.com/embed/YlQabNIzTMU" width="560" height="315"></object>
+        <!--levels explanation video-->
+        <iframe src="https://www.youtube.com/embed/YlQabNIzTMU"
         
     <?php elseif($percent_correct == 100): ?>
         <p>Amazing! You answered all of them correctly! And so, you go up a level!</p>
