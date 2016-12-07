@@ -4,7 +4,7 @@
 
     <head>
         <!-- website icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="/public/img/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
         
         <!-- http://getbootstrap.com/ -->
         <link href="/css/bootstrap.min.css" rel="stylesheet"/>
