@@ -28,6 +28,7 @@
         <h2>LEVELS</h2>
         <!--levels explanation video-->
         <iframe src="https://www.youtube.com/embed/YlQabNIzTMU"
+        width="560" height="315" frameborder="0" allowfullscreen></iframe>
         
     <?php elseif($percent_correct == 100): ?>
         <p>Amazing! You answered all of them correctly! And so, you go up a level!</p>
